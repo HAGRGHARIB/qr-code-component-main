@@ -13,7 +13,15 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
   <style>
-    body {
+    * {
+      box-sizing: border-box;
+    }
+    body{
+      min-height: 100vh;
+      margin: 0;
+    }
+
+    main {
       display: flex;
       align-items: center;
       justify-content: center;
@@ -32,7 +40,7 @@
 
     .card__image {
       width: 100%;
-      height: 300px;
+      aspect-ratio: 1;
       display: block;
       border-radius: 10px;
     }
@@ -40,17 +48,18 @@
     .card__title {
       font-family: 'Outfit', sans-serif;
       font-weight: 700;
+      font-size: 20px;
       color: hsl(218, 44%, 22%);
       text-align: center;
-      padding-left: 5px;
-      padding-right: 5px;
+      padding-left: 15px;
+      padding-right: 15px;
     }
 
     .card__description {
       font-family: 'Outfit', sans-serif;
       color: hsl(216, 15%, 48%);
       text-align: center;
-      font-size: 17px;
+      font-size: 15px;
       font-weight: 400;
       padding-left: 18px;
       padding-right: 18px;
@@ -73,12 +82,15 @@
 
 <body>
 
-  <div class="card">
-    <img src="./images/image-qr-code.png" alt="QR code" class="card__image">
-    <h2 class="card__title">Improve your front-end skills by building projects</h2>
-    <p class="card__description">Scan the QR code to visit Frontend Mentor and take your coding skills to the next level
-    </p>
-  </div>
+  <main>
+    <div class="card">
+      <img src="./images/image-qr-code.png" alt="QR code" class="card__image">
+      <h1 class="card__title">Improve your front-end skills by building projects</h1>
+      <p class="card__description">Scan the QR code to visit Frontend Mentor and take your coding skills to the next
+        level
+      </p>
+    </div>
+  </main>
 </body>
 
 </html>
